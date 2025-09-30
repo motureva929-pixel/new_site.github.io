@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Marcellus";
+  src: url("/fonts/Marcellus-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+:root {
+  --bs-body-font-family: "Marcellus";
+  --color1: #AFD726;
+  --color2: #425400;
+}
+
+.hero-section {
+  background: var(--color1);
+  background: linear-gradient(to right, #425400, #AFD726);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background-color: #425400;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #AFD726;
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Делает белую стрелку черной */
+  width: 25px;
+  height: 25px;
+}
+
+.mobile-img-size {
+  width: 250px;
+}
+
+@media (max-width: 575.98px) {
+  .mobile-img-size {
+    width: 200px;
+  }
+}
+/* Точно на 375px */
+@media (max-width: 375px) {
+  .mobile-img-size {
+    width: 150px;
+  }
+}/*# sourceMappingURL=main.css.map */
